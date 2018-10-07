@@ -1,0 +1,15 @@
+﻿@page
+@model MVAAspCorePractise2.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<p>Enter your name:</p>
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <div>Name: <input asp-for="Customer.Name" /></div>
+    <span asp-validation-for="Customer.Name"></span>
+    <input type="submit" />
+</form>
+
